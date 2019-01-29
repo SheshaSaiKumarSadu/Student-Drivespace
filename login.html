@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title>Drivespace</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="login.js">
+        </script>
+    </head>
+    <body background="loginbackground.jpg">
+        <div id="login">
+            <br>
+            <br>
+            <h1 align="center">VCE DRIVESPACE</h1>
+            <br>
+            <!--<img src="loginpic.png" width="70px" height="70px">-->
+            <form id="myform" action="workspace.html" onsubmit="return validate()">
+        <table cellspacing="5px">
+            <tr>
+                <td><i class="fa fa-user icon"></i>  <input type="text" id="username" name="username" placeholder="Enter your UserName"></td>
+            </tr>
+            <tr>
+                <td><p id="uerror" style="color: red; visibility: hidden; font-size:12px; padding: 0">Enter some username</p></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-lock icon"></i>  <input type="password" id="pass" name="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td><p id="perror" style="color:red;visibility: hidden;font-size: 12px;padding:0">Enter some password</p></td>
+            </tr>
+            <tr>
+                <td align="center"><button type="submit" onclick="validate()" id="submit">Submit</button></td>
+            </tr>
+        </table>
+        </form>
+        </div>
+    </body>
+</html>

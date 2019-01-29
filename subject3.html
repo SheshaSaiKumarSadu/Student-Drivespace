@@ -1,0 +1,129 @@
+
+<html>
+    <head>
+        <title>Drivespace</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="login.js"></script>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size:20px;
+            }
+            #header{
+                background-color: #444;
+                color:white;
+                padding:10px;
+                margin:0px;
+                text-align: center;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #444;
+                position: sticky;
+                top: 0;
+            }
+
+            li {
+                  float: left;
+            }
+
+            li a {
+                 display: block;
+                 color: white;
+                 text-align: center;
+                  padding: 16px;
+                  text-decoration: none;
+            }
+
+/* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color: #111  ;
+            }
+
+            #upload{
+                background-color:rgb(0, 128, 122);
+                border:2px solid rgb(0, 109, 128);
+                border-radius:10px; 
+                margin-right:50px;
+                text-decoration: none;
+                padding: 2px 15px;
+                color:white;
+            }
+            #upload:focus{
+                outline:none;
+            }
+            table{
+                margin:10px;
+                background-color: #F3F3F3;
+                border-collapse: collapse;
+                width: 100%;
+                margin: 15px 0;
+            }
+            th {
+                background-color: #1F618D;
+                color: #FFF;
+                cursor: pointer;
+                padding: 5px 10px;
+            }
+            th small {
+                font-size: 9px; 
+            }
+            td, th {
+            text-align: center;
+            font-size:15px;
+            padding: 15px 20px;
+            }
+            tr:nth-of-type(odd) {
+            background-color: #E6E6E6;
+            }
+            th:hover{
+                cursor: auto;
+            }
+            td:hover{
+                background-color:#CACACA;
+            }
+            td a{
+                text-decoration: none;
+                color:black;
+                font-size:15px;
+            }
+            td a:hover{
+                text-decoration: underline;
+                cursor:hand;
+            }
+        </style>
+    </head>
+    <body>
+            <ul>
+                <li><a href="workspace.html">Home</a></li>
+                <li><a href="subject1.html">Subject1</a></li>
+                <li><a href="subject2.html">Subject2</a></li>
+                <li style="background-color: #52BE80 ; padding:16px">Subject3</li>
+                <li style="float: right;"><a href="login.html" id="logout">Logout</a></li>>
+            </ul>
+        <div style="text-align:center;padding-left:450px;padding-top: 10px;padding-bottom: 10px ;position: sticky;top: 50px;background-color: #FFFFFF ">
+                <label for="files" id="upload">Upload  <i class="fa fa-upload"></i></label>
+                <input id="files" style="visibility:hidden;" type="file">
+        </div>
+        <table cellspacing="10" >
+            <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Last Modified</th>
+            </tr>
+            </thead>
+            <tr>
+                <td><a href="#">File4.ppt</a></td>
+                <td>PPT File</td>
+                <td>1.8 MB</td>
+                <td>Jan 26 2019 12:14 PM</td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
